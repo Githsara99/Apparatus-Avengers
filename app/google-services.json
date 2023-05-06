@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "634031184885",
+    "project_id": "mtracker-26edd",
+    "storage_bucket": "mtracker-26edd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634031184885:android:5332c744e139697a6b1ebc",
+        "android_client_info": {
+          "package_name": "com.example.mtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634031184885-4hc3jip9qftqpmud2bkccfutlvvgr6sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrGwItohaUKt1CmJ9dGzDnETHQSLC7XQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634031184885-4hc3jip9qftqpmud2bkccfutlvvgr6sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

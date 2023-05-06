@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category">
+
+    <ImageButton
+        android:id="@+id/add_bill"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="add_bill"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bill"
+        app:layout_constraintBottom_toTopOf="@+id/add_food"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/add_fuel"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="add_fuel"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fuel"
+        app:layout_constraintBottom_toTopOf="@+id/add_hospital"
+        app:layout_constraintEnd_toStartOf="@+id/add_bill" />
+
+
+    <ImageButton
+        android:id="@+id/add_hospital"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="add_hospital"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hospital"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/add_food"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/add_food"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="add_food"
+        android:scaleType="fitCenter"
+        android:src="@drawable/food"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_fuel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/add_education"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="add_education"
+        android:scaleType="fitCenter"
+        android:src="@drawable/education"
+        app:layout_constraintBottom_toTopOf="@+id/add_hospital"
+        app:layout_constraintEnd_toStartOf="@+id/add_fuel"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/add_income"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="128dp"
+        android:text="Income"
+        android:textColor="@color/theme"
+        android:textColorLink="@color/theme"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/enter_income"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/enter_income"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:foregroundTint="@color/theme"
+        android:hint="ENTER INCOME"
+        android:inputType="number"
+        android:textColorHint="@color/theme"
+        app:layout_constraintBottom_toTopOf="@+id/add_fuel"
+        app:layout_constraintEnd_toEndOf="@+id/add_income"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/add_income" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="category"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/category"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="home"
+            app:srcCompat="@drawable/baseline_category_24" />
+
+        <ImageButton
+            android:id="@+id/notification"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="notification"
+            app:srcCompat="@drawable/baseline_notifications_24" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIncome"
+        android:layout_width="85dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/theme"
+        android:text="Add "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/enter_income"
+        app:layout_constraintTop_toBottomOf="@+id/add_income" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

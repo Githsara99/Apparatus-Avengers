@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MTracker"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.mtracker.User.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.User.UserAccount"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.User.UserUpdate"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.mtracker.Health.HealthList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.Health.HealthFetch"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.mtracker.Fuel.FuelList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.Fuel.FuelFetch"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.mtracker.Food.FoodList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.Food.FoodFetch"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.Education.EduList"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.Education.EduFetch"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.mtracker.Bill.BillFetch"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mtracker.Bill.BillList"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name="com.example.mtracker.Bill.BillAdapter" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".Final"
+            android:exported="false" />
+        <activity
+            android:name=".Health.Edit_health"
+            android:exported="false" />
+        <activity
+            android:name=".Fuel.Edit_fuel"
+            android:exported="false" />
+        <activity
+            android:name=".Food.Edit_food"
+            android:exported="false" />
+        <activity
+            android:name=".Education.Edit_education"
+            android:exported="false" />
+        <activity
+            android:name=".Bill.Edit_bill"
+            android:exported="false" />
+        <activity
+            android:name=".Health.Hospital"
+            android:exported="false" />
+        <activity
+            android:name=".Education.Education"
+            android:exported="false" />
+        <activity
+            android:name=".Food.Food"
+            android:exported="false" />
+        <activity
+            android:name=".Fuel.Fuel"
+            android:exported="false" />
+        <activity
+            android:name=".Bill.Bill"
+            android:exported="false" />
+        <activity
+            android:name=".Category"
+            android:exported="false" />
+        <activity
+            android:name=".User.Login"
+            android:exported="false" />
+        <activity
+            android:name=".User.Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
