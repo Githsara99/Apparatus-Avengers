@@ -36,5 +36,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="category"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/category"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="home"
+            app:srcCompat="@drawable/baseline_category_24" />
+
+        <ImageButton
+            android:id="@+id/notification"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="notification"
+            app:srcCompat="@drawable/baseline_notifications_24" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

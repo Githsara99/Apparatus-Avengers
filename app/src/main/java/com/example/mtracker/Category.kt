@@ -14,6 +14,8 @@ import com.example.mtracker.Fuel.Fuel
 import com.example.mtracker.Health.HealthFetch
 import com.example.mtracker.Health.Hospital
 import com.example.mtracker.Models.BillModel
+import com.example.mtracker.User.UserAccount
+import com.example.mtracker.User.UserUpdate
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -69,6 +71,16 @@ class Category : AppCompatActivity() {
             val intent = Intent(this, Fuel::class.java)
             startActivity(intent)
         }
+        val summaryButton: Button = findViewById(R.id.btnSummary)
+        summaryButton.setOnClickListener {
+            val intent = Intent(this, Final::class.java)
+            startActivity(intent)
+        }
+        val userButton: ImageButton = findViewById(R.id.user)
+        userButton.setOnClickListener {
+            val intent = Intent(this, UserAccount::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -91,8 +103,8 @@ class Category : AppCompatActivity() {
 
                 enterIncome.text.clear()
 
-                val intent = Intent(this, Final::class.java)
-                startActivity(intent)
+//                val intent = Intent(this, Final::class.java)
+//                startActivity(intent)
 
 
             }.addOnFailureListener { err ->

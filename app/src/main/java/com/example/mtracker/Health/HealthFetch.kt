@@ -38,7 +38,7 @@ class HealthFetch : AppCompatActivity() {
         healthRecyclerView.visibility = View.GONE
         rvHealthData.visibility = View.VISIBLE
 
-        dbRef = FirebaseDatabase.getInstance().getReference("Bill")
+        dbRef = FirebaseDatabase.getInstance().getReference("Health")
 
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {

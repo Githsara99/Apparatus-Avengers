@@ -7,13 +7,14 @@
     app:cardCornerRadius="8dp"
     android:layout_margin="8dp">
 
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="16dp"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,16 +26,19 @@
                 android:id="@+id/billamount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bill"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:text="Bill"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
 
         </LinearLayout>
 
     </LinearLayout>
+
+
+
 
 </androidx.cardview.widget.CardView>

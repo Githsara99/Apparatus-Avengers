@@ -25,7 +25,7 @@
                 android:id="@+id/foodamount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bill"
+                android:text="Food"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/black"

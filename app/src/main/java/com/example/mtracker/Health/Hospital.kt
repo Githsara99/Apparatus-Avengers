@@ -9,7 +9,10 @@ import android.widget.ImageButton
 import android.widget.Toast
 import com.example.mtracker.Bill.BillFetch
 import com.example.mtracker.Category
+import com.example.mtracker.Final
+import com.example.mtracker.Fuel.FuelFetch
 import com.example.mtracker.Models.BillModel
+import com.example.mtracker.Models.HealthModel
 import com.example.mtracker.R
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DatabaseReference
@@ -33,14 +36,19 @@ class Hospital : AppCompatActivity() {
             saveBillData()
         }
 
-        val home: ImageButton = findViewById(R.id.homebtn)
+        val home: ImageButton = findViewById(R.id.home)
         home.setOnClickListener {
             val intent = Intent(this, Category::class.java)
             startActivity(intent)
         }
-        val cat: ImageButton = findViewById(R.id.catbtn)
+        val cat: ImageButton = findViewById(R.id.category)
         cat.setOnClickListener {
-            val intent = Intent(this, Category::class.java)
+            val intent = Intent(this, Final::class.java)
+            startActivity(intent)
+        }
+        val healthSummary: Button = findViewById(R.id.healthSummary)
+        healthSummary.setOnClickListener {
+            val intent = Intent(this, HealthFetch::class.java)
             startActivity(intent)
         }
 
@@ -57,7 +65,7 @@ class Hospital : AppCompatActivity() {
         //to handle the overlapping of user entered data
         val healthId = dbRef.push().key!!
 
-        val health = BillModel(healthId, healthAmount)
+        val health = HealthModel(healthId, healthAmount)
 
         dbRef.child(healthId).setValue(health)
             .addOnCompleteListener{

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatImageButton
 import com.example.mtracker.Bill.BillFetch
 import com.example.mtracker.Category
+import com.example.mtracker.Final
 import com.example.mtracker.Models.BillModel
 import com.example.mtracker.Models.HealthModel
 import com.example.mtracker.R
@@ -29,15 +30,15 @@ class Edit_health : AppCompatActivity() {
 
         healthedtbtn.setOnClickListener {
             openUpdateHealth(
-                intent.getStringExtra("healthId").toString(),
-                intent.getStringExtra("healths").toString()
+                intent.getStringExtra("billId").toString(),
+                intent.getStringExtra("bills").toString()
             )
         }
 
 
         healthdltbtn.setOnClickListener {
             deleteRecord(
-                intent.getStringExtra("healthId").toString()
+                intent.getStringExtra("billId").toString()
             )
         }
 
@@ -48,7 +49,7 @@ class Edit_health : AppCompatActivity() {
         }
         val cat: ImageButton = findViewById(R.id.catbtn)
         cat.setOnClickListener {
-            val intent = Intent(this, Category::class.java)
+            val intent = Intent(this, Final::class.java)
             startActivity(intent)
         }
     }

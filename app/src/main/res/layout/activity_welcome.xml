@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottom_white" />
+         />
 
     <TextView
         android:id="@+id/billamount"
@@ -54,8 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="dfghjdbf lgrflhjerbf hjbljhsbr \nlhjblhrf rhbj fjhebr ekhrgb
-        \neekjbg hfrkbhjbkvhd dkfjgbkdjbg"
+        android:text="We here to manage your life........."
         android:textColor="#8b8b8b"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"

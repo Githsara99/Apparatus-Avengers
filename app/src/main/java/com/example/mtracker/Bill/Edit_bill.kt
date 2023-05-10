@@ -7,6 +7,7 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatImageButton
 import com.example.mtracker.Category
+import com.example.mtracker.Final
 import com.example.mtracker.Models.BillModel
 import com.example.mtracker.R
 import com.google.firebase.database.FirebaseDatabase
@@ -46,7 +47,7 @@ class Edit_bill : AppCompatActivity() {
         }
         val cat: ImageButton = findViewById(R.id.catbtn)
         cat.setOnClickListener {
-            val intent = Intent(this, Category::class.java)
+            val intent = Intent(this, Final::class.java)
             startActivity(intent)
         }
     }

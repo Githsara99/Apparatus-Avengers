@@ -25,7 +25,7 @@ class Final : AppCompatActivity() {
 
 
         FirebaseApp.initializeApp(this)
-       // FirebaseDatabase.getInstance().setPersistenceEnabled(true)
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true)
 
         val databaseReference = FirebaseDatabase.getInstance().getReference("income")
         databaseReference.addValueEventListener(object : ValueEventListener {
@@ -37,7 +37,6 @@ class Final : AppCompatActivity() {
                 val healthAmount = enterHealth.text.toString().toIntOrNull() ?: 0
                 val educationAmount = enterEducation.text.toString().toIntOrNull() ?: 0
                 val fuelAmount = enterFuel.text.toString().toIntOrNull() ?: 0
-
                 val totalSpent = billAmount + foodAmount + healthAmount + educationAmount + fuelAmount
                 val balance = currentIncome - totalSpent
                 val balanceTextView = findViewById<TextView>(R.id.balanceTextView)

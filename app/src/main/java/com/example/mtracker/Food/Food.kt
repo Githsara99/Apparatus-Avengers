@@ -9,6 +9,8 @@ import android.widget.ImageButton
 import android.widget.Toast
 import com.example.mtracker.Bill.BillFetch
 import com.example.mtracker.Category
+import com.example.mtracker.Final
+import com.example.mtracker.Fuel.FuelFetch
 import com.example.mtracker.Models.BillModel
 import com.example.mtracker.R
 import com.google.android.material.button.MaterialButton
@@ -33,14 +35,19 @@ class Food : AppCompatActivity() {
             saveBillData()
         }
 
-        val home: ImageButton = findViewById(R.id.homebtn)
+        val home: ImageButton = findViewById(R.id.home)
         home.setOnClickListener {
             val intent = Intent(this, Category::class.java)
             startActivity(intent)
         }
-        val cat: ImageButton = findViewById(R.id.catbtn)
+        val cat: ImageButton = findViewById(R.id.category)
         cat.setOnClickListener {
-            val intent = Intent(this, Category::class.java)
+            val intent = Intent(this, Final::class.java)
+            startActivity(intent)
+        }
+        val foodSummary: Button = findViewById(R.id.foodSummary)
+        foodSummary.setOnClickListener {
+            val intent = Intent(this, FoodFetch::class.java)
             startActivity(intent)
         }
 
