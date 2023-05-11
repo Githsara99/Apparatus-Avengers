@@ -32,7 +32,7 @@ class Food : AppCompatActivity() {
 
 
         addFoodBtn.setOnClickListener {
-            saveBillData()
+            saveFoodData()
         }
 
         val home: ImageButton = findViewById(R.id.home)
@@ -53,7 +53,7 @@ class Food : AppCompatActivity() {
 
     }
 
-    private fun saveBillData(){
+    private fun saveFoodData(){
 
         val foodAmount = enterFood.text.toString()
 

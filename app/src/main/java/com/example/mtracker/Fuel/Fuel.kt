@@ -31,7 +31,7 @@ class Fuel : AppCompatActivity() {
 
 
         addFuelBtn.setOnClickListener {
-            saveBillData()
+            saveFuelData()
         }
 
         val home: ImageButton = findViewById(R.id.home)
@@ -52,7 +52,7 @@ class Fuel : AppCompatActivity() {
 
     }
 
-    private fun saveBillData(){
+    private fun saveFuelData(){
 
         val fuelAmount = enterFuel.text.toString()
 

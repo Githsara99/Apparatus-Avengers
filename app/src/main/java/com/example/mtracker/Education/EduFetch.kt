@@ -31,10 +31,10 @@ class EduFetch : AppCompatActivity() {
 
         eduList = arrayListOf<EduModel>()
 
-        getBillData()
+        getEduData()
     }
 
-    private fun getBillData() {
+    private fun getEduData() {
         eduRecyclerView.visibility = View.GONE
         rvEduData.visibility = View.VISIBLE
 

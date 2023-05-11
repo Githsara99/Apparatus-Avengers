@@ -31,10 +31,10 @@ class FoodFetch : AppCompatActivity() {
 
         foodList = arrayListOf<FoodModel>()
 
-        getBillData()
+        getFoodData()
     }
 
-    private fun getBillData() {
+    private fun getFoodData() {
         foodRecyclerView.visibility = View.GONE
         rvFoodData.visibility = View.VISIBLE
 

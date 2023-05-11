@@ -31,10 +31,10 @@ class FuelFetch : AppCompatActivity() {
 
         fuelList = arrayListOf<FuelModel>()
 
-        getBillData()
+        getFuelData()
     }
 
-    private fun getBillData() {
+    private fun getFuelData() {
         fuelRecyclerView.visibility = View.GONE
         rvFuelData.visibility = View.VISIBLE
 

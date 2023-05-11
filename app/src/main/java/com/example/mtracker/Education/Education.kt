@@ -12,6 +12,7 @@ import com.example.mtracker.Category
 import com.example.mtracker.Final
 import com.example.mtracker.Fuel.FuelFetch
 import com.example.mtracker.Models.BillModel
+import com.example.mtracker.Models.EduModel
 import com.example.mtracker.R
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.database.DatabaseReference
@@ -32,7 +33,7 @@ class Education : AppCompatActivity() {
 
 
         addEducationBtn.setOnClickListener {
-            saveBillData()
+            saveEduData()
         }
 
         val home: ImageButton = findViewById(R.id.home)
@@ -53,7 +54,7 @@ class Education : AppCompatActivity() {
 
     }
 
-    private fun saveBillData(){
+    private fun saveEduData(){
 
         val eduAmount = enterEducation.text.toString()
 

@@ -31,10 +31,10 @@ class HealthFetch : AppCompatActivity() {
 
         healthList = arrayListOf<HealthModel>()
 
-        getBillData()
+        getHealthData()
     }
 
-    private fun getBillData() {
+    private fun getHealthData() {
         healthRecyclerView.visibility = View.GONE
         rvHealthData.visibility = View.VISIBLE
 

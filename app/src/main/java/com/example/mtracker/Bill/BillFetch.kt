@@ -4,9 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mtracker.Category
+import com.example.mtracker.Final
 import com.example.mtracker.Models.BillModel
 import com.example.mtracker.R
 import com.google.firebase.database.*
@@ -25,6 +28,17 @@ class BillFetch : AppCompatActivity() {
         billRecyclerView.layoutManager = LinearLayoutManager(this)
         billRecyclerView.setHasFixedSize(true)
         rvBillData = findViewById(R.id.rvBillData)
+
+        val home: ImageButton = findViewById(R.id.home)
+        home.setOnClickListener {
+            val intent = Intent(this, Category::class.java)
+            startActivity(intent)
+        }
+        val cat: ImageButton = findViewById(R.id.category)
+        cat.setOnClickListener {
+            val intent = Intent(this, Final::class.java)
+            startActivity(intent)
+        }
 
         billList = arrayListOf<BillModel>()
 
