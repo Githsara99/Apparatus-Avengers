@@ -12,47 +12,46 @@
         android:theme="@style/Theme.MTracker"
         tools:targetApi="31">
         <activity
-            android:name="com.example.mtracker.User.HomeActivity"
+            android:name=".FinalPage"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.User.UserAccount"
+            android:name=".User.HomeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.User.UserUpdate"
-            android:exported="false" />
-
-        <activity
-            android:name="com.example.mtracker.Health.HealthList"
+            android:name=".User.UserAccount"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.Health.HealthFetch"
-            android:exported="false" />
-
-        <activity
-            android:name="com.example.mtracker.Fuel.FuelList"
+            android:name=".User.UserUpdate"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.Fuel.FuelFetch"
-            android:exported="false" />
-
-        <activity
-            android:name="com.example.mtracker.Food.FoodList"
+            android:name=".Health.HealthList"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.Food.FoodFetch"
+            android:name=".Health.HealthFetch"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.Education.EduList"
+            android:name=".Fuel.FuelList"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.Education.EduFetch"
-            android:exported="false" />
-
-        <activity
-            android:name="com.example.mtracker.Bill.BillFetch"
+            android:name=".Fuel.FuelFetch"
             android:exported="false" />
         <activity
-            android:name="com.example.mtracker.Bill.BillList"
+            android:name=".Food.FoodList"
+            android:exported="false" />
+        <activity
+            android:name=".Food.FoodFetch"
+            android:exported="false" />
+        <activity
+            android:name=".Education.EduList"
+            android:exported="false" />
+        <activity
+            android:name=".Education.EduFetch"
+            android:exported="false" />
+        <activity
+            android:name=".Bill.BillFetch"
+            android:exported="false" />
+        <activity
+            android:name=".Bill.BillList"
             android:exported="false" /> <!-- <activity -->
         <!-- android:name="com.example.mtracker.Bill.BillAdapter" -->
         <!-- android:exported="false" /> -->

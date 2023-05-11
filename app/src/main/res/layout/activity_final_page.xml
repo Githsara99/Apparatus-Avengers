@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#A387D5"
     android:backgroundTint="#FFFFFF"
-    tools:context=".Final">
+    tools:context=".FinalPage">
 
     <TextView
         android:id="@+id/incomeTextView"
@@ -141,7 +141,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.974"
         app:srcCompat="@drawable/baseline_notifications_24" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

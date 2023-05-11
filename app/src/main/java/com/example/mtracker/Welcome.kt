@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.mtracker.User.Login
 import com.example.mtracker.User.Signup
 
 class Welcome : AppCompatActivity() {
@@ -14,7 +15,7 @@ class Welcome : AppCompatActivity() {
         val startapp : TextView = findViewById(R.id.btnStart)
 
         startapp.setOnClickListener {
-            val intent = Intent(this, Signup::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }

@@ -14,6 +14,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class Login : AppCompatActivity() {
+    //user validation
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class Login : AppCompatActivity() {
         val registertext : TextView = findViewById(R.id.register_now)
 
         registertext.setOnClickListener {
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, Signup::class.java)
             startActivity(intent)
         }
 

@@ -33,7 +33,7 @@ class Hospital : AppCompatActivity() {
 
 
         addHealthBtn.setOnClickListener {
-            saveBillData()
+            saveHealthData()
         }
 
         val home: ImageButton = findViewById(R.id.home)
@@ -54,7 +54,7 @@ class Hospital : AppCompatActivity() {
 
     }
 
-    private fun saveBillData(){
+    private fun saveHealthData(){
 
         val healthAmount = enterHealth.text.toString()
 

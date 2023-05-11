@@ -38,7 +38,7 @@ class Category : AppCompatActivity() {
         }
         val home: ImageButton = findViewById(R.id.home)
         home.setOnClickListener {
-            val intent = Intent(this, Category::class.java)
+            val intent = Intent(this, Final::class.java)
             startActivity(intent)
         }
 
@@ -73,7 +73,7 @@ class Category : AppCompatActivity() {
         }
         val summaryButton: Button = findViewById(R.id.btnSummary)
         summaryButton.setOnClickListener {
-            val intent = Intent(this, Final::class.java)
+            val intent = Intent(this, FinalPage::class.java)
             startActivity(intent)
         }
         val userButton: ImageButton = findViewById(R.id.user)
